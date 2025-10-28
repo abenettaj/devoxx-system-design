@@ -28,81 +28,81 @@ The talk shows a clean and practical way to build a **Design System** that is:
 
 1. **Create a Vite project**
 
-  ```bash
-  npm create vite@latest devoxx-design-system -- --template react-ts
-  ```
+```bash
+npm create vite@latest devoxx-design-system -- --template react-ts
+```
 
 2. **Install Tailwind CSS**
 
-  ```bash
-  npm install tailwindcss @tailwindcss/vite
-  ```
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
 
-  - Add Tailwind config to Vite
-  - Import Tailwind CSS in **index.css**
-  - Optionally mention: design tokens can be added here for consistency
+- Add Tailwind config to Vite
+- Import Tailwind CSS in **index.css**
+- Optionally mention: design tokens can be added here for consistency
 
 3. **Create a reusable Button component**
 
-  - Create **src/components/Button/Button.tsx**
-  - Add props: **variant** and **size**
-  - Use utility **cn** to merge Tailwind classes efficiently
-  - Install dependencies:
+- Create **src/components/Button/Button.tsx**
+- Add props: **variant** and **size**
+- Use utility **cn** to merge Tailwind classes efficiently
+- Install dependencies:
 
-  ```bash
-  npm install clsx tailwind-merge
-  ```
+```bash
+npm install clsx tailwind-merge
+```
 
 4. **Test the Button in App.tsx**
 
-  - Import and render it
-  - Start the dev server: **npm run dev**
+- Import and render it
+- Start the dev server: **npm run dev**
 
 5. **Add Storybook for documentation**
 
-  ```bash
-  npm create storybook@latest
-  ```
+```bash
+npm create storybook@latest
+```
 
-  - Default configuration
-  - Create **Button.stories.tsx**
-  - Add variants: Primary, Secondary, Sizes
-  - Export stories for Storybook
+- Default configuration
+- Create **Button.stories.tsx**
+- Add variants: Primary, Secondary, Sizes
+- Export stories for Storybook
 
 6. **Build and publish the library**
 
-  - Install Vite plugin for TypeScript declarations:
+- Install Vite plugin for TypeScript declarations:
 
-  ```bash
-  npm install vite-plugin-dts
-  ```
+```bash
+npm install vite-plugin-dts
+```
 
-  - Update **vite.config.js** for library mode
-  - Configure **package.json** (name, version, public access)
-  - Add **tsconfig.build.json** for build configuration
-  - Create **index.ts** files in each folder for proper exports
-  - Build: **npm run build**
-  - Publish to npm:
+- Update **vite.config.js** for library mode
+- Configure **package.json** (name, version, public access)
+- Add **tsconfig.build.json** for build configuration
+- Create **index.ts** files in each folder for proper exports
+- Build: **npm run build**
+- Publish to npm:
 
-  ```bash
-  npm login
-  npm publish --access public
-  ```
+```bash
+npm login
+npm publish --access public
+```
 
 7. **Test the library in a new project**
 
-  - Create a new Vite project
-  - Install your published package
-  - Import and use the Button component
-  - Verify everything works without installing Tailwind again
+- Create a new Vite project
+- Install your published package
+- Import and use the Button component
+- Verify everything works without installing Tailwind again
 
 8. **Build Storybook documentation**
 
-  ```bash
-  npm run build-storybook
-  ```
+```bash
+npm run build-storybook
+```
 
-  - Integrate static Storybook into CI/CD for team use
+- Integrate static Storybook into CI/CD for team use
 
 ---
 
