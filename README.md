@@ -45,20 +45,9 @@ npm install tailwindcss @tailwindcss/vite
 3. **Create a reusable Button component**
 
 - Create **src/components/Button/Button.tsx**
-- Add props: **variant** and **size**
 - Use utility **cn** to merge Tailwind classes efficiently
-- Install dependencies:
 
-```bash
-npm install clsx tailwind-merge
-```
-
-4. **Test the Button in App.tsx**
-
-- Import and render it
-- Start the dev server: **npm run dev**
-
-5. **Add Storybook for documentation**
+4. **Add Storybook for documentation**
 
 ```bash
 npm create storybook@latest
@@ -66,12 +55,12 @@ npm create storybook@latest
 
 - Default configuration
 - Create **Button.stories.tsx**
-- Add variants: Primary, Secondary, Sizes
+- Add variants: Primary, Secondary
 - Export stories for Storybook
 
-6. **Build and publish the library**
+5. **Build and publish the library**
 
-- Install Vite plugin for TypeScript declarations:
+- Install DTS Vite plugin for TypeScript declarations:
 
 ```bash
 npm install vite-plugin-dts
@@ -89,14 +78,7 @@ npm login
 npm publish --access public
 ```
 
-7. **Test the library in a new project**
-
-- Create a new Vite project
-- Install your published package
-- Import and use the Button component
-- Verify everything works without installing Tailwind again
-
-8. **Build Storybook documentation**
+6. **Build Storybook documentation**
 
 ```bash
 npm run build-storybook
