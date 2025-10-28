@@ -1,6 +1,6 @@
 # Reusable Design System with React, Tailwind, and Storybook
 
-This repository contains the demo code and materials from my **Devoxx 2025 talk**,  
+This repository contains the demo code and materials from my **Devoxx Morocco 2025 talk**,  
 where I demonstrate how to build a **reusable and maintainable Design System** using **React**, **TailwindCSS**, and **Storybook**.
 
 ---
