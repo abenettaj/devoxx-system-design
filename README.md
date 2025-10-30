@@ -54,6 +54,7 @@ npm create storybook@latest
 ```
 
 - Default configuration
+- Import Css in **.storybook/preview.ts**
 - Create **Button.stories.tsx**
 - Add variants: Primary, Secondary
 - Export stories for Storybook
